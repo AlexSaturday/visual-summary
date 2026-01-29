@@ -16,10 +16,6 @@
     flex-wrap: wrap;
   }
   
-  
-  .links__item {
-  }
-  
   .links__link {
     display: inline-block;
     padding: 0.6rem 1rem;
