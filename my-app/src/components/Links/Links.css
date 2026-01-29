@@ -1,0 +1,39 @@
+ .links {
+    margin-bottom: 3rem;
+  }
+  
+  .links__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .links__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  
+  .links__item {
+  }
+  
+  .links__link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #eef2ff;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  
+  /*
+   pill-style кнопки
+  */
+  
+  .links__link:hover {
+    background-color: #e0e7ff;
+    transform: translateY(-1px);
+  }

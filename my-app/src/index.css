@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+}
+
+
+
+
+:root {
+    --color-bg-main: #DEF7FE;
+    --color-bg-secondary: #E7ECFF;
+    --color-accent: #B5F2EA;
+
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #4b5563;
+
+    --color-card-bg: #ffffff;
+    --color-border-soft: rgba(0, 0, 0, 0.05);
+}

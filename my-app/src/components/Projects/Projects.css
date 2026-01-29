@@ -1,0 +1,31 @@
+  .projects__item {
+    padding: 1.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .projects__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .projects {
+    margin-bottom: 3rem;
+  }
+  
+  .projects__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projects__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .projects__item p {
+    margin: 0.5rem 0 0;
+    color: #444;
+  }
