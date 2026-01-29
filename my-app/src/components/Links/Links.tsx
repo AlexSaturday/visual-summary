@@ -12,6 +12,7 @@ type LinksProps = {
     variant?: 'default' | 'footer';
 };
 
+
 const Links: React.FC<LinksProps> = ({links, variant = 'default'}:LinksProps) => {
     return (
         <ul className={`links links--${variant}`}>
