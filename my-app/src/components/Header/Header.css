@@ -1,1 +1,33 @@
-/* Стили для компонента Header */
+.header__image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__image {
+    max-width: 15%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header__tagline {
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
+}
+
+.header__title {
+    font-size: var(--font-size-large);
+    margin-bottom: 0.5rem;
+}
+   
+.header__description {
+    font-size: var(--font-size-small);
+    color: var(--color-secondary);
+    margin-top: 1.5rem;
+}
+

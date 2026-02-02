@@ -28,4 +28,9 @@ body {
 
     --color-card-bg: #ffffff;
     --color-border-soft: rgba(0, 0, 0, 0.05);
+
+    --font-size-small: 1.5rem;
+    --font-size-base: 2rem;
+    --font-size-large: 4rem;
+    --font-size-xlarge: 6rem;
 }

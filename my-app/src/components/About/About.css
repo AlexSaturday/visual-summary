@@ -1,1 +1,17 @@
-/* Стили для компонента About */
+.about {
+    padding: 20px;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about__title {
+    font-size: var(--font-size-base);
+    margin-bottom: 10px;
+}
+
+.about__description {
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+}

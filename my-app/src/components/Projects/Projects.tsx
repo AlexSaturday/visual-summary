@@ -6,18 +6,19 @@ const Projects: React.FC = () => {
     return (
         <section className="projects">
             <h2 className='projects__title'>Проекты и идеи</h2>
-            <ul className='projects__list'>
+            <div className='projects__grid'>
                 {projects.map((project) => (
-                    <li key={project.id} className='projects__item'>
-                        <strong>{project.title}</strong> - {project.description}{" "}
+                    <div key={project.id} className='projects__card'>
+                        <strong>{project.title}</strong>
+                        <p>{project.description}</p>
                         {project.link && (
                             <a href={project.link} target="_blank" rel="noopener noreferrer">
                                 [Ссылка]
                             </a>
                         )}
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </section>
     );
 };

@@ -15,10 +15,11 @@ type LinksProps = {
 
 const Links: React.FC<LinksProps> = ({links, variant = 'default'}:LinksProps) => {
     return (
-        <ul className={`links links--${variant}`}>
+        <section className={`links links--${variant}`}>
             <h2 className='links__title'>Здесь будут мои ссылки</h2>
+            <div className='links__flex'>
             {links.map((link) => (
-                <li key={link.id} className="links__item">
+                <div key={link.id} className="links__item">
                     <a href={link.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -26,9 +27,10 @@ const Links: React.FC<LinksProps> = ({links, variant = 'default'}:LinksProps) =>
                     >
                         {link.name}
                     </a>
-                </li>
+                </div>
             ))}
-        </ul>
+            </div>
+        </section>
     );
 };
 
