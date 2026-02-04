@@ -1,0 +1,23 @@
+
+.project-timeline__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-timeline__day {
+    padding: 1.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-timeline__day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.projects__card p {
+    margin: 0.5rem 0;
+    color: #444;
+}
