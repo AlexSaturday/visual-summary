@@ -5,14 +5,14 @@
     gap: 1.5rem;
 }
 
-.project-timeline__day {
+.project-timeline__day-card {
     padding: 1.25rem;
     background: white;
     border-radius: 10px;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.project-timeline__day:hover {
+.project-timeline__day-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
@@ -20,4 +20,16 @@
 .projects__card p {
     margin: 0.5rem 0;
     color: #444;
+}
+
+.project-timeline__back-button {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
 }

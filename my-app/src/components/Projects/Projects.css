@@ -1,6 +1,7 @@
 .projects {
     padding: 3rem 1rem;
     background: #f9f9f9;
+    text-align: center;
 }
 
 .projects__grid {
@@ -83,4 +84,16 @@
   outline: none;
 
   font-family: inherit;
+}
+
+.projects__add-button {
+    margin: 1rem 0 2rem 0;
+    padding: 10px 20px;
+    background: var(--color-accent);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: background 0.15s ease;
 }

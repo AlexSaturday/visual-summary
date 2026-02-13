@@ -57,6 +57,24 @@ const Projects: React.FC = () => {
         setIsCreated(false);
     };
 
+    const addDayToProject = (projectId: string) => {
+        setProjects(prev => 
+            prev.map(proj => {
+                if (proj.id === projectId) {
+                    const newDay: Day = {
+                        id: proj.days.length + 1,
+                        day: `День ${proj.days.length + 1}`,
+                        title: 'Название дня',
+                        plan: 'План дня',
+                        result: 'Результат дня',
+                        status: 'planned'
+                    };
+                    return { ...proj, days: [...proj.days, newDay] };
+                }
+                return proj;
+            })
+        );
+    }
 
     const startEditProject = (
             e: React.MouseEvent,
@@ -115,7 +133,7 @@ const Projects: React.FC = () => {
     
     return (
         <section className="projects">
-            <button className='projects__add-button' onClick={startCreateProject}>Добавить проект</button>
+            
 
             <h2 className='projects__title'>{activeProject ? activeProject.title : 'Проекты'}</h2>
             { !activeProject ? (
@@ -191,6 +209,7 @@ const Projects: React.FC = () => {
                     tempValue={tempValue}
                     setTempValue={setTempValue}
                     save={save}
+                    addDay={() => addDayToProject(activeProject.id)}
                     />
                 )
             }
@@ -222,7 +241,11 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
                 </div>
-)}
+                
+            )}
+            {!activeProject && (
+                <button className='projects__add-button' onClick={startCreateProject}>Добавить проект</button>
+            )}
         </section>
     );
 };
