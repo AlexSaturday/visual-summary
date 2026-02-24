@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  link        String?
+  days        Day[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Day {
+  id         Int      @id @default(autoincrement())
+  dayNumber  Int
+  dayLabel   String   
+  title      String
+  plan       String
+  result     String
+  status     DayStatus @default(planned)
+
+  projectId  String
+  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([projectId, dayNumber])
+}
+
+enum DayStatus {
+  planned
+  completed
+  skipped
+}
