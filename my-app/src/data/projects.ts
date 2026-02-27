@@ -1,6 +1,6 @@
 import type { Day } from "./days.ts";
 
-export type Projects = {
+export type Projects_t = {
     title: string;
     description: string;
     id: string;

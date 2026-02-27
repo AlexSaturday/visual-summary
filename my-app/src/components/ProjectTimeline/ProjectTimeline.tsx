@@ -1,12 +1,12 @@
 import React from "react";
-import type { Projects } from '../../data/projects';
+import type { Projects_t } from '../../data/projects';
 import type { Editing } from '../Projects/Projects';
 import './ProjectTimeline.css';
 import type { Day } from "../../data/days";
 
 type ProjectTimelineProps = {
     onBack: () => void;
-    project: Projects;
+    project: Projects_t;
     editing: Editing;
     setEditing: (value: Editing) => void;
     tempValue: string;
